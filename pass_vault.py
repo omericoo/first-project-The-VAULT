@@ -107,6 +107,11 @@ def main():
                 d --> Press d if you want to delete a password.
                 q --> Press q if you want to get out of the vault.
                 ''')
+             print('''
+                ############################################
+                ############################################
+                ############################################
+                 ''')
             choice = input('What would you like to do: ')
 
             if choice.lower().strip() == 'a':
@@ -122,7 +127,7 @@ def main():
                 else:
                     p = input('Enter password: ')
 
-                if mail_check(mail) == True:
+                if mail_check(mail) is True:
                     insert(app, mail, p)
                 else:
                     print('Unvalid mail\nTry again!')
