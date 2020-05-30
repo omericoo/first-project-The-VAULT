@@ -151,8 +151,9 @@ def main():
             elif choice.lower().strip() == 'q':
                 # Quiting the program and signing out.
                 print('Good Bye...')
-                break
                 conn.close()
+                break
+          
     else:
         print('WRONG PASSWORD!')
         conn.close()
