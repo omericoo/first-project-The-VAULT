@@ -1,7 +1,6 @@
 import sqlite3
 from sqlite3 import Error
 import random
-import time
 import string
 import pyperclip
 from datetime import datetime
