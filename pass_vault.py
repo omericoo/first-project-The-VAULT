@@ -130,7 +130,7 @@ def main():
                 if mail_check(mail) is True:
                     insert(app, mail, p)
                 else:
-                    print('Unvalid mail\nTry again!')
+                    print('Invalid mail\nTry again!')
                     continue
 
             elif choice.lower().strip() == 'g':
